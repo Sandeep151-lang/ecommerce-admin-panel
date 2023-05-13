@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useParams, useHistory } from 'react-router-dom';
-import axios from 'axios';
+import { useParams} from 'react-router-dom';
+// import axios from 'axios';
 import Select from 'react-select'
 //import { Stepper, Step } from 'react-form-stepper';
 import { Col, Row } from 'reactstrap'
@@ -16,7 +16,7 @@ const ProductDetails = () => {
     const [loading, setloading] = useState(true);
     const [data, setdata] = useState([])
 
-    const history = useHistory()
+    // const history = useHistory()
 
     const loaduser = async () => {
         setloading(true)

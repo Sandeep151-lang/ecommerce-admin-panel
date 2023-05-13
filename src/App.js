@@ -13,7 +13,6 @@ import Logout from './component/Logout';
 import Products from './component/Products'
 import { initialState, reducer } from './reducer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Private from './component/PrivateRoute/private';
 
 
 

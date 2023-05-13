@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios';
+import React, { useState } from 'react'
+// import axios from 'axios';
 import { Form, FormGroup, Label, Input } from 'reactstrap'
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 import { Axios } from './commonApi/commonApi';
 
 
 const Product = () => {
-    const history = useHistory()
+    // const history = useHistory()
    
     const [selectedFile, setSelectedFile] = React.useState(null);
     const [product_name, setproduct_name] = useState();

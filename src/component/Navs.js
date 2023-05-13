@@ -1,16 +1,16 @@
-import React, { useContext, useEffect } from 'react'
-import { MyContext } from '../App';
+import React from 'react'
+// import { MyContext } from '../App';
 import { NavLink } from 'react-router-dom';
-import axios from 'axios';
-import { Axios } from './commonApi/commonApi';
+// import axios from 'axios';
+// import { Axios } from './commonApi/commonApi';
 
 
 
 const Navs = () => {
-    const { dispatch } = useContext(MyContext)
+    // const { dispatch } = useContext(MyContext)
 
     const token = localStorage.getItem('jwt')
-    const { state } = useContext(MyContext);
+    // const { state } = useContext(MyContext);
     if (token) {
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light w3-card-4">

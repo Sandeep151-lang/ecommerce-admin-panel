@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { useHistory } from 'react-router'
+import React from 'react';
+
+// import { useHistory } from 'react-router'
 import { Card } from 'reactstrap'
-import LoadingSpinners from './LoadingSpinners';
-import { Axios } from './commonApi/commonApi';
+
 
 
 const About = () => {
-    const [loading, setloading] = useState(true);
-    const history = useHistory();
+    // const [loading, setloading] = useState(true);
+    // const history = useHistory();
     const email = sessionStorage.getItem('email')
     const name = sessionStorage.getItem('name')
-    console.log(sessionStorage.getItem('email'))
-    const [data, setdata] = useState([]);
+    
    
    
         return (

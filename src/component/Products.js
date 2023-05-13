@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+// import axios from 'axios'
 import { Button } from 'reactstrap'
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 import LoadingSpinners from './LoadingSpinners';
 import { Axios } from './commonApi/commonApi';
 
 const Products = () => {
-    const history = useHistory()
+    // const history = useHistory()
 
     const [data, setdata] = useState([]);
     const [loading, setloading] = useState(true);

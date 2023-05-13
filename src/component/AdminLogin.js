@@ -8,8 +8,6 @@ import { MyContext } from '../App';
 
 const AdminLogin = () => {
     const { dispatch } = useContext(MyContext)
-
-    const toke = localStorage.getItem('jwt')
     const history = useHistory();
     const [register, setregister] = useState({
         email: '',
