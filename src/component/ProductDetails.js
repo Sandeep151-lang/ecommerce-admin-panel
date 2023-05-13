@@ -42,7 +42,7 @@ const ProductDetails = () => {
 
     const edit = async () => {
 
-        const res = await Axios.put(`/product/list/${_id}`, sel)
+        const res = await Axios.put(`admin/product/list/${_id}`, sel)
         setselect(res)
     }
 
