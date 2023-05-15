@@ -70,7 +70,7 @@ const App = () => {
           <Route exact path='/' component={HomePage} />
           <LoginPrivateRoute path="/admin/login" component={AdminLogin} />
           <LoginPrivateRoute path="/admin/register" component={AdminRegister} />
-          <LoginPrivateRoute path="/logout" component={Logout} />
+          <Route path="/logout" component={Logout} />
           {/* <Route path="/products/:_id" component={ProductDetails} /> */}
           {/* <Route path="/products" component={Products} /> */}
           <PrivateRoute path="/create/product" component={CreaProduct} />
