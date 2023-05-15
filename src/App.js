@@ -23,6 +23,26 @@ const App = () => {
 
   const [state, dispatch] = useReducer(reducer, initialState)
 
+  
+  function LoginPrivateRoute({ component: Component, ...rest }) {
+    return (
+      <Route
+        {...rest}
+        render={props =>
+          !token ? (
+            <Component {...props} />
+          ) : (
+            <Redirect
+              to={{
+                pathname: "/",
+              }}
+            />
+          )
+        }
+      />
+    );
+  }
+
   function PrivateRoute({ component: Component, ...rest }) {
     return (
       <Route
@@ -48,9 +68,9 @@ const App = () => {
         <Navs />
         <Switch>
           <Route exact path='/' component={HomePage} />
-          <Route path="/admin/login" component={AdminLogin} />
-          <Route path="/admin/register" component={AdminRegister} />
-          <Route path="/logout" component={Logout} />
+          <LoginPrivateRoute path="/admin/login" component={AdminLogin} />
+          <LoginPrivateRoute path="/admin/register" component={AdminRegister} />
+          <LoginPrivateRoute path="/logout" component={Logout} />
           {/* <Route path="/products/:_id" component={ProductDetails} /> */}
           {/* <Route path="/products" component={Products} /> */}
           <PrivateRoute path="/create/product" component={CreaProduct} />
